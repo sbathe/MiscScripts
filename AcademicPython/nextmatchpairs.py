@@ -1,4 +1,11 @@
 #!/usr/bin/python
+# Uses collections.defaultdict 
+# So that I do not have to do:
+#
+# if not paircount.has_key(hold):
+#   paircount[hold]=1
+# else
+#   paircount[hold] += 1
 import collections
 str = 'abcdefghijklmnopqrstuvwxyz'
 paircount = collections.defaultdict(int)
